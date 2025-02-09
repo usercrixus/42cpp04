@@ -2,6 +2,8 @@ OBJ = \
 		Animal.o \
 		Cat.o \
 		Dog.o \
+		WrongAnimal.o \
+		WrongCat.o \
 		main.o \
 
 
