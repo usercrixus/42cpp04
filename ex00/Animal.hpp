@@ -12,10 +12,10 @@ protected:
 public:
 	Animal(/* args */);
 	Animal(Animal &cpy);
-	~Animal();
+ 	virtual ~Animal();
 	Animal &operator=(Animal &cpy);
 	std::string getType() const;
-	void makeSound() const;
+	virtual void makeSound() const;
 };
 
 #endif

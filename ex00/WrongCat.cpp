@@ -24,3 +24,8 @@ WrongAnimal &WrongCat::operator=(WrongAnimal &cpy)
 	std::cout << "WrongCat cpy operator" << std::endl;
 	return *this;
 }
+
+void WrongCat::makeSound() const
+{
+	std::cout << "WrongCat..." << std::endl;
+}

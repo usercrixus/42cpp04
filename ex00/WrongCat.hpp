@@ -12,6 +12,7 @@ public:
 	WrongCat(WrongAnimal &cpy);
 	~WrongCat();
 	WrongAnimal &operator=(WrongAnimal &);
+	void makeSound() const;
 };
 
 #endif
