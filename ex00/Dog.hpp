@@ -9,9 +9,9 @@ private:
 	/* data */
 public:
 	Dog(/* args */);
-	Dog(Animal &cpy);
+	Dog(const Animal &cpy);
 	~Dog();
-	Animal &operator=(Animal &cpy);
+	Animal &operator=(const Animal &cpy);
 	void makeSound() const;
 };
 

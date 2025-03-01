@@ -11,9 +11,9 @@ protected:
 	std::string type;
 public:
 	Animal(/* args */);
-	Animal(Animal &cpy);
+	Animal(const Animal &cpy);
  	virtual ~Animal();
-	Animal &operator=(Animal &cpy);
+	Animal &operator=(const Animal &cpy);
 	std::string getType() const;
 	virtual void makeSound() const = 0;
 };

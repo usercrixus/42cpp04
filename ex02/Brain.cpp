@@ -4,12 +4,12 @@ Brain::Brain(/* args */)
 {
 }
 
-Brain::Brain(Brain &cpy)
+Brain::Brain(const Brain &cpy)
 {
 	*this = cpy;
 }
 
-Brain &Brain::operator=(Brain &cpy)
+Brain &Brain::operator=(const Brain &cpy)
 {
 	int	i = 0;
 	while (i < 100)

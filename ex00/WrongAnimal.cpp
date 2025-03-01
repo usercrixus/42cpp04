@@ -5,7 +5,7 @@ WrongAnimal::WrongAnimal(/* args */)
 	std::cout << "WrongAnimal constructor" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(WrongAnimal &cpy)
+WrongAnimal::WrongAnimal(const WrongAnimal &cpy)
 {
 	this->type = cpy.getType();
 	std::cout << "WrongAnimal cpy constructor" << std::endl;
@@ -16,7 +16,7 @@ WrongAnimal::~WrongAnimal()
 	std::cout << "WrongAnimal destructor" << std::endl;
 }
 
-WrongAnimal &WrongAnimal::operator=(WrongAnimal &cpy)
+WrongAnimal &WrongAnimal::operator=(const WrongAnimal &cpy)
 {
 	this->type = cpy.getType();
 	std::cout << "WrongAnimal cpy operator" << std::endl;

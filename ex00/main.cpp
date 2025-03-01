@@ -20,10 +20,13 @@ int main()
 
 	const WrongAnimal *m = new WrongAnimal();
 	const WrongAnimal *c = new WrongCat();
+	const WrongCat *d = new WrongCat();
 	m->makeSound();
 	c->makeSound();
+	d->makeSound();
 	delete m;
 	delete c;
+	delete d;
 
 
 	return 0;

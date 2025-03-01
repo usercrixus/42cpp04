@@ -11,9 +11,9 @@ protected:
 	std::string type;
 public:
 	WrongAnimal(/* args */);
-	WrongAnimal(WrongAnimal &cpy);
+	WrongAnimal(const WrongAnimal &cpy);
 	~WrongAnimal();
-	WrongAnimal &operator=(WrongAnimal &cpy);
+	WrongAnimal &operator=(const WrongAnimal &cpy);
 	std::string getType() const;
 	void makeSound() const;
 };

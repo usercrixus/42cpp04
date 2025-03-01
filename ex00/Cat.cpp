@@ -7,7 +7,7 @@ Animal()
 	std::cout << "Cat constructor" << std::endl;
 }
 
-Cat::Cat(Animal &cpy)
+Cat::Cat(const Animal &cpy)
 {
 	this->type = cpy.getType();
 	std::cout << "Cat cpy constructor" << std::endl;
@@ -18,7 +18,7 @@ Cat::~Cat()
 	std::cout << "Cat destructor" << std::endl;
 }
 
-Animal &Cat::operator=(Animal &cpy)
+Animal &Cat::operator=(const Animal &cpy)
 {
 	this->type = cpy.getType();
 	std::cout << "Cat cpy operator" << std::endl;

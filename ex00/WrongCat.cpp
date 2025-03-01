@@ -7,7 +7,7 @@ WrongAnimal()
 	std::cout << "WrongCat constructor" << std::endl;
 }
 
-WrongCat::WrongCat(WrongAnimal &cpy)
+WrongCat::WrongCat(const WrongAnimal &cpy)
 {
 	this->type = cpy.getType();
 	std::cout << "WrongCat cpy constructor" << std::endl;
@@ -18,7 +18,7 @@ WrongCat::~WrongCat()
 	std::cout << "WrongCat destructor" << std::endl;
 }
 
-WrongAnimal &WrongCat::operator=(WrongAnimal &cpy)
+WrongAnimal &WrongCat::operator=(const WrongAnimal &cpy)
 {
 	this->type = cpy.getType();
 	std::cout << "WrongCat cpy operator" << std::endl;

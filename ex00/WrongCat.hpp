@@ -9,9 +9,9 @@ private:
 	/* data */
 public:
 	WrongCat(/* args */);
-	WrongCat(WrongAnimal &cpy);
+	WrongCat(const WrongAnimal &cpy);
 	~WrongCat();
-	WrongAnimal &operator=(WrongAnimal &);
+	WrongAnimal &operator=(const WrongAnimal &);
 	void makeSound() const;
 };
 

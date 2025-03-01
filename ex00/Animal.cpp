@@ -5,7 +5,7 @@ Animal::Animal(/* args */)
 	std::cout << "Animal constructor" << std::endl;
 }
 
-Animal::Animal(Animal &cpy)
+Animal::Animal(const Animal &cpy)
 {
 	this->type = cpy.getType();
 	std::cout << "Animal cpy constructor" << std::endl;
@@ -16,7 +16,7 @@ Animal::~Animal()
 	std::cout << "Animal destructor" << std::endl;
 }
 
-Animal &Animal::operator=(Animal &cpy)
+Animal &Animal::operator=(const Animal &cpy)
 {
 	this->type = cpy.getType();
 	std::cout << "Animal cpy operator" << std::endl;
