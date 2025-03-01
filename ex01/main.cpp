@@ -8,6 +8,16 @@ int main()
 	delete j;//should not create a leak
 	delete i;
 
+
+	Dog basic;
+	{
+		Dog tmp = basic;
+	}
+	Cat basic2;
+	{
+		Cat tmp2 = basic2;
+	}
+
 	Animal* animals[10];
 	int x = 0;
 	while (x < 5)
